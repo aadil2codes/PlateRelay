@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlateShare - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="brand cursor-pointer" onclick="window.location.href='index.html'">
+                <div class="brand-logo">P</div>
+                <span class="brand-text">PlateShare</span>
+            </div>
+            <div class="nav-links">
+                <button class="nav-btn-link" onclick="window.location.href='index.html'">Home</button>
+                <button class="nav-btn-link" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn btn-primary ml-4" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app">
+        <main class="view">
+            <section class="hero slide-up">
+                <div class="hero-badge"><i class="fa-solid fa-leaf"></i> Zero Hunger Initiative</div>
+                <h1 class="hero-title">Share <span class="text-gradient">Surplus Food</span><br> Save the Planet</h1>
+                <p class="hero-subtitle">Connect your Food Business or Event with nearby NGOs to donate excess food in
+                    real-time. Join the movement to eliminate food waste and feed those in need.</p>
+                <!-- <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" onclick="window.location.href='register.html'">Join as a
+                        Food Provider</button>
+                    <button class="btn btn-secondary btn-large" onclick="window.location.href='register.html'">Register
+                        NGO</button>
+                </div> -->
+
+                <!-- Giving Food Animation -->
+                <div class="giving-animation-container">
+                    <div class="donor-side" style="color: #f59e0b;">
+                        <i class="fa-solid fa-store"></i>
+                        <span class="anim-label">Provider</span>
+                    </div>
+
+                    <div class="food-package package-1">
+                        <i class="fa-solid fa-box-open text-accent" style="color: #d97706;"></i>
+                        <i class="fa-solid fa-bowl-food food-item text-primary"></i>
+                    </div>
+
+                    <div class="ngo-side text-primary">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span class="anim-label">NGO</span>
+                    </div>
+
+                    <div class="food-package package-2">
+                        <i class="fa-solid fa-bag-shopping text-accent" style="color: #059669;"></i>
+                        <i class="fa-solid fa-apple-whole food-item text-primary" style="color: #f59e0b;"></i>
+                    </div>
+
+                    <div class="recipient-side" style="color: #eb4d4b;">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                        <span class="anim-label">Needy</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon text-warning bg-warning-light"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Real-time Updates</h3>
+                    <p>Surplus food listings appear instantly. Once accepted, they disappear to prevent duplicate
+                        pickups.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon text-success bg-success-light"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Easy Posting</h3>
+                    <p>Food Providers can post available food in seconds with intuitive forms tailored for
+                        high-volume kitchens and events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon text-primary bg-primary-light"><i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Verified Partners</h3>
+                    <p>Built-in role management ensures food only goes to registered NGOs, maintaining community trust.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="auth-check.js"></script>
+</body>
+
+</html>
